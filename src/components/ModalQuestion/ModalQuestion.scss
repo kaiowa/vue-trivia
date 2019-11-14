@@ -1,0 +1,90 @@
+@keyframes fadeColor {
+
+  0% {
+    
+    background-color: rgba(55,136,3,1);
+  }
+  25% {
+    background-color: rgba(55,136,3,0.6);
+  }
+
+  75% {
+    background-color: rgba(55,136,3,0.6);
+  }
+  100% {
+    background-color: rgba(55,136,3,1);
+  }
+}
+
+.question{
+  .close{
+    position: absolute;
+    top: 0;
+    right: -20;
+    background:url('../../assets/btnclose.png');
+    background-size: 100% 100%;
+    width:40px;
+    height: 40px;
+  }
+  .category{
+    background:url('../../assets/mensaje.png');
+    background-size: 100% 100%;
+    width: 50%;
+    height: 70px;
+    top: -10px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-grow: column;
+    align-items: center;
+    color: #fff;
+   
+    .message{
+      flex: 1 1 auto;
+      text-align: center;
+      font-size: 35px;
+      text-transform: uppercase;
+      font-family:"fredoka_oneregular";
+    }
+  }
+  .question-title{
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .answers{
+    width: 80%;
+    margin: 0 auto;
+    .message{
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .answer-button{
+      width: 100%;
+      text-align: center;
+      margin: 10px 0px;
+      height: 50px;
+      border-radius: 10px;
+      color: #fff;
+      border: 1px solid #b07638;
+      background: #b07638;
+      font-weight: bold;
+      font-size: 20px;
+      &.correct{
+        background-color: green;
+        animation:fadeColor 0.5s infinite;
+      }
+      &.incorrect{
+        background-color: #b70202;
+       
+      }
+    }
+    button:focus {outline:0;}
+  }
+  
+}

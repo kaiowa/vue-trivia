@@ -1,0 +1,132 @@
+{
+  "questions":[
+    {
+      "id":1,
+      "name":"Cine",
+      "clase":"cine",
+      "score":0
+    },
+    {
+      "id":2,
+      "name":"Sports",
+      "clase":"deportes",
+      "score":0
+    },
+    {
+      "id":5,
+      "name":"Music",
+      "clase":"musica",
+      "score":0
+    },
+    {
+      "id":4,
+      "name":"Technology",
+      "clase":"informatica",
+      "score":0
+    },
+    {
+      "id":3,
+      "name":"History",
+      "clase":"historia",
+      "score":0
+    }
+  ],
+  "cells":[
+    {
+      "id":1,
+      "name":1,
+      "type":1
+    },
+    {
+      "id":2,
+      "name":2,
+      "type":2
+    }, {
+      "id":3,
+      "name":3,
+      "type":3
+    }, {
+      "id":4,
+      "name":4,
+      "type":4
+    }, {
+      "id":5,
+      "name":1,
+      "type":1
+    }, {
+      "id":6,
+      "name":1,
+      "type":4
+    }, {
+      "id":7,
+      "name":1,
+      "type":2
+    }, {
+      "id":8,
+      "name":1,
+      "type":1
+    }, {
+      "id":9,
+      "name":1,
+      "type":5
+    }, {
+      "id":10,
+      "name":1,
+      "type":3
+    }, {
+      "id":11,
+      "name":1,
+      "type":4
+    }, {
+      "id":12,
+      "name":1,
+      "type":5
+    }, {
+      "id":13,
+      "name":1,
+      "type":3
+    }, {
+      "id":14,
+      "name":1,
+      "type":2
+    }, {
+      "id":15,
+      "name":1,
+      "type":1
+    }, {
+      "id":16,
+      "name":1,
+      "type":4
+    }, {
+      "id":17,
+      "name":1,
+      "type":2
+    }, {
+      "id":18,
+      "name":1,
+      "type":3
+    }, {
+      "id":19,
+      "name":1,
+      "type":1
+    }, {
+      "id":20,
+      "name":1,
+      "type":3
+    }, {
+      "id":21,
+      "name":1,
+      "type":2
+    }, {
+      "id":21,
+      "name":1,
+      "type":5
+    }, {
+      "id":22,
+      "name":1,
+      "type":4
+    }
+  ]
+
+
+}

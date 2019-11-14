@@ -1,0 +1,40 @@
+.progress-bar{
+  height: 50px;
+  width: 200px;
+  background: #cdc7bf;
+  border-radius: 5px;
+  display: flex;
+  margin: 0 auto 10px;
+  overflow: hidden;
+  margin-left: 0;
+  position: relative;
+  align-items: center;
+  background: url('../../assets/fondobarra.png');
+  background-size: 100% 100%;
+  color: #fff;
+  .score{
+    left: 21px;
+    position: relative;
+    font-size: 22px;
+    font-family:"fredoka_oneregular";
+  }
+  .title-progress{
+    display: block;
+    flex: 1;
+    z-index: 4;
+    text-align: center;
+    align-self: center;
+    color: #fff;
+    text-align: center;
+    font-family:"fredoka_oneregular";
+  }
+  .progress{
+    position: absolute;
+    top: 13px;
+    left: 50px;
+    background-color: #a87b4b;
+    width: 20%;
+    height: 23px;
+    border-radius: 4px;
+  }
+}

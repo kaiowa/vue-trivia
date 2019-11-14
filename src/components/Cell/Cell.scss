@@ -1,0 +1,91 @@
+.cell{
+  min-width: 200px;
+  height: 80px;
+  border: 1px solid;
+  background: #777;
+  width: 50%;
+  height: 50px;
+ 
+  
+  
+}
+@keyframes blinkActive {
+
+  0% {
+   
+    background:url(../../assets/background-cell-on.png) 100% no-repeat;
+    background-size: 100% 100%;
+  }
+  100% {
+    background:url(../../assets/background-cell.png) 100% no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.space{
+ 
+  .container{
+    .name{
+      color:#fff;
+      flex: 1 1 auto;
+      width: 100%;
+      height: 100%;
+  
+    }
+  }
+  &.active{
+    animation:blinkActive 0.8s infinite; 
+  }
+  &.cine{
+    background-color:#f50c2b;
+    background:url(../../assets/background-cell.png) 100% no-repeat;
+    background-size: 100% 100%;
+    .name{
+      background:url(../../assets/icon_cine.png) 100% no-repeat;
+      background-size: 59% 60%;
+      left: -25px;
+      position: relative;
+    }
+  }
+  &.deportes{
+    background-color: #10a506;
+    background:url(../../assets/background-cell.png) 100% no-repeat;
+    background-size: 100% 100%;
+    .name{
+      background:url(../../assets/icon_sports.png) 50% no-repeat;
+      background-size: 50% 50%;
+    }
+  }
+  &.literatura{
+    background-color: #369be9;
+    background:url(../../assets/background-cell.png) 100% no-repeat;
+    background-size: 100% 100%;
+  }
+  &.informatica{
+    background-color:#05c5c5;
+    background:url(../../assets/background-cell.png) 100% no-repeat;
+    background-size: 100% 100%;
+    .name{
+      background:url(../../assets/icon_tech.png) 50% no-repeat;
+      background-size: 50% 50%;
+    }
+  }
+  &.historia{
+    background-color: #ffed20;
+    background:url(../../assets/background-cell.png) 100% no-repeat;
+    background-size: 100% 100%;
+    .name{
+      background:url(../../assets/icon_history.png) 50% no-repeat;
+      background-size: 50% 50%;
+    }
+  }
+  &.musica{
+    background-color: #890396;
+    background:url(../../assets/background-cell.png) 100% no-repeat;
+    background-size: 100% 100%;
+    .name{
+      background:url(../../assets/icon_music.png) 50% no-repeat;
+      background-size: 50% 50%;
+    }
+  }
+}
