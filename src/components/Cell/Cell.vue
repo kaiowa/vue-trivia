@@ -13,5 +13,5 @@
 </template>
 <script src="./Cell.js"></script>
 <style lang="scss" scoped>
-  @import "./cell.scss";
+  @import "./Cell.scss";
 </style>
