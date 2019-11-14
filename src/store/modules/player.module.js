@@ -77,9 +77,7 @@ const mutations = {
     state[data]++;
   },
   updateQuestionsOK(state,data){
-    console.log('questions',state.questions);
-
-    debugger;
+ 
     let tempScores=state.scores.map((item)=>{
       if(item.id===data.catego){
         item.score++
@@ -94,8 +92,6 @@ const mutations = {
     this.dispatch('player/increaseValues','TotalOk');
   },
   updateActiveOptions(state,data){
-    debugger;
-
     state.tirando=true;
     state.activeOptions=data;
     state.cells.map((cell)=>{
@@ -107,7 +103,6 @@ const mutations = {
         })
         if(casilla) casilla.active=true;
      });
-    console.log(state.cells);
   },
   updateTirando(state,data){
     state.tirando=data;

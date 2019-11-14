@@ -7,7 +7,7 @@ export default {
   },
   methods: {
     clicked(){
-      debugger;
+      
     }
     
   }

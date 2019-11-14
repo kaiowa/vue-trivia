@@ -40,8 +40,17 @@ export default {
     this.correct=false;
     this.$store.dispatch('player/getGuestionByIdType',this.questionType.id).then((question)=>{
       this.question=question;
-      listenQuestion(this.question.question);
+      
+      let textResponses='';
       this.answers = this.question.answers.map((a) => [Math.random(),a]).sort((a,b) => a[0]-b[0]).map((a) => a[1]);
+      
+      this.answers.forEach(element => {
+          console.log(element);
+          textResponses +=element.text+'                                  ';
+      });
+      listenQuestion(this.question.question).then(()=>{
+     
+      });
       this.rightAnswer=question.right;
       this.$store.dispatch('player/increaseValues','TotalShows');
     });

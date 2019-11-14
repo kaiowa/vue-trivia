@@ -17,7 +17,7 @@ export default {
     };
   },
   created(){
-    debugger;
+    
     console.log('created header');
   },
   mounted() {

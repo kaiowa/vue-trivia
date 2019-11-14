@@ -75,8 +75,6 @@
 	 
 </div>
 
-<button @click="Posicionar()">posicionar</button>
-  <p style="color:#fff">{{casillas}}</p>
 </div>
 
 </template>

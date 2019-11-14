@@ -40,11 +40,17 @@ export function getPosition(pos){
   return position;
 }
 export function listenQuestion(textListen){
-  //What team debuted Pedro de la Rosa in Formula 1?
-  let synth = window.speechSynthesis
-  let utterThis = new SpeechSynthesisUtterance(textListen)
-  utterThis.pitch = 3
-  utterThis.rate = -6
-  synth.speak(utterThis)
+  return new Promise((resolve) => {
+    let synth = window.speechSynthesis
+    let utterThis = new SpeechSynthesisUtterance(textListen)
+    utterThis.pitch = 3
+    utterThis.rate = -6
+    synth.speak(utterThis);
+    utterThis.addEventListener('end',()=> {
+      console.log('terminado');
+       resolve('terminadooo');
+    })
+
+  });
 
 }

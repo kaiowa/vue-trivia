@@ -74,8 +74,6 @@ export default {
       let posterior=this.currentPosition+this.resultadoTirada;
       activeOptions.push(anterior);
       activeOptions.push(posterior);
-      debugger;
-      
       this.$store.dispatch('player/updateActiveOptions',activeOptions).then((data)=>{
         console.log('data',data);
        this.startGame=true;
@@ -130,9 +128,6 @@ export default {
       this.$store.dispatch('player/updatePosition',this.currentPosition);
       let playerTop=this.$refs.player.offsetTop;
       let playerLeft=this.$refs.player.offsetLeft;
-
-      debugger;
-
       if(this.position.top!=playerTop){
         
         let mKeyframes=this.generateKeyFrames(playerTop,playerLeft,this.position.top,this.position.left);
