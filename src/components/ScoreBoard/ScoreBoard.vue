@@ -1,11 +1,17 @@
 <template>
-	<div class="scoreboard">
-		
-		<div class="scores" v-if="scores">
-			<ProgressBar v-for="item in scores" :key="item.id" :score="item.score" :cell="item"></ProgressBar>
-		</div>
-	</div>
-
+  <div class="scoreboard">
+    <div
+      v-if="scores"
+      class="scores"
+    >
+      <ProgressBar
+        v-for="item in scores"
+        :key="item.id"
+        :score="item.score"
+        :cell="item"
+      />
+    </div>
+  </div>
 </template>
 <script src="./ScoreBoard.js"></script>
 <style lang="scss" scoped>

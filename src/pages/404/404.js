@@ -21,7 +21,7 @@ export default {
   },
   mounted() {
    
-   console.log('mounted home');
+    console.log('mounted home');
   },
  
   methods: {

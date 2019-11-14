@@ -22,7 +22,7 @@ export default {
   },
   mounted() {
    
-   console.log('mounted header');
+    console.log('mounted header');
   }
  
 };

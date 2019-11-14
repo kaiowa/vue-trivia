@@ -8,7 +8,7 @@ export default {
   },
   computed: {
     ...mapState({
-    tirando:state => state.player.tirando
+      tirando:state => state.player.tirando
     }),
   },
   data() {
@@ -32,12 +32,12 @@ export default {
     },
     generateDice(){
      
-        let Min = 0;
-        let Max = 5;
-        let  posi = Math.ceil(Min + (Math.random() * ((Max - Min) + 1)));
-        this.diceResult=posi;
-        this.$emit('tirada',this.diceResult);
-        console.log('this.diceResult',this.diceResult);
+      let Min = 0;
+      let Max = 5;
+      let  posi = Math.ceil(Min + (Math.random() * ((Max - Min) + 1)));
+      this.diceResult=posi;
+      this.$emit('tirada',this.diceResult);
+      console.log('this.diceResult',this.diceResult);
      
     },
     launchDice(){
@@ -47,7 +47,7 @@ export default {
           this.rotating=false;
           this.generateDice();
 
-        },2000)
+        },2000);
       }
 
     },

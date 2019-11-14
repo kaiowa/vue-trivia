@@ -20,7 +20,7 @@ export default {
    
   },
   mounted(){
-   console.log('Mounted App');
+    console.log('Mounted App');
    
   },
 };

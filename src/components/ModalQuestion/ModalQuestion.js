@@ -45,8 +45,8 @@ export default {
       this.answers = this.question.answers.map((a) => [Math.random(),a]).sort((a,b) => a[0]-b[0]).map((a) => a[1]);
       
       this.answers.forEach(element => {
-          console.log(element);
-          textResponses +=element.text+'                                  ';
+        console.log(element);
+        textResponses +=element.text+'                                  ';
       });
       listenQuestion(this.question.question).then(()=>{
      
@@ -64,11 +64,11 @@ export default {
       });
       setTimeout(()=>{
         this.$emit('close');
-      },2000)
+      },2000);
     },
     getClassAnswered(id){
       return this.answers.find((data)=>{
-        return data.id==id
+        return data.id==id;
       }).class;
     },
     sendAnswer(item){
@@ -80,14 +80,14 @@ export default {
       });
      
       let options={
-        "question":this.question,
-        "correct":this.correct
-      }
+        'question':this.question,
+        'correct':this.correct
+      };
       this.statusStopTimer=true;
-      this.$store.dispatch('player/sendAnswer',options)
+      this.$store.dispatch('player/sendAnswer',options);
       setTimeout(()=>{
         this.$emit('close');
-      },2000)
+      },2000);
       
     }
   }

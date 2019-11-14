@@ -2,8 +2,10 @@ import Cell from '@/components/Cell';
 import Dice from '@/components/Dice';
 import ScoreBoard from  '@/components/ScoreBoard';
 import ModalQuestion from '@/components/ModalQuestion';
+import ModalSettings from '@/components/ModalSettings';
 import TimerBar from '@/components/TimerBar';
 import Button from '@/components/Button';
+import SwitchSlider from '@/components/ui/Switch';
 
 import anime from 'animejs/lib/anime.es.js';
 import {getPosition} from '@/common/Utils.js';
@@ -15,8 +17,10 @@ export default {
     Dice,
     ScoreBoard,
     ModalQuestion,
+    ModalSettings,
     TimerBar,
-    Button
+    Button,
+    SwitchSlider
   },
   props: {
     name: String,
@@ -33,10 +37,10 @@ export default {
   },
   computed: {
     ...mapState({
-     casillas:state => state.player.cells,
-     TotalShows:state=>state.player.TotalShows,
-     TotalOk:state => state.player.TotalOk,
-     scores:state => state.player.scores
+      casillas:state => state.player.cells,
+      TotalShows:state=>state.player.TotalShows,
+      TotalOk:state => state.player.TotalOk,
+      scores:state => state.player.scores
     }),
     
   },
@@ -52,10 +56,10 @@ export default {
   },
 
   mounted() {
-  this.$store.dispatch('player/startResetGame');
-  this.cScores=this.scores;
-   this.Posicionar();
-   console.log('mounted header');
+    this.$store.dispatch('player/startResetGame');
+    this.cScores=this.scores;
+    this.Posicionar();
+    console.log('mounted header');
   },
   methods: {
    
@@ -76,7 +80,7 @@ export default {
       activeOptions.push(posterior);
       this.$store.dispatch('player/updateActiveOptions',activeOptions).then((data)=>{
         console.log('data',data);
-       this.startGame=true;
+        this.startGame=true;
       });
     },
     updatePosition(celda){
@@ -86,8 +90,13 @@ export default {
       this.$store.dispatch('player/getCellType',this.currentPosition).then((data)=>{
         console.log('tipo Pregunta',data);
         this.$modal.show(ModalQuestion,{questionType:data,idCell:this.currentPosition}, {draggable: false,clickToClose: false});
-      })
+      });
       
+    },
+    openSettings(){
+      debugger;
+      this.$modal.show(ModalSettings);
+   
     },
     generateKeyFrames(playerTop,playerLeft,positionTop,positionLeft){
       let mKeyframes=[];
@@ -138,10 +147,10 @@ export default {
           duration: 1000,
           easing: 'easeInOutExpo',
           complete: function() {
-           console.log('lanzar pregunta');
-           if(self.startGame){
-            self.openQuestion()
-           }
+            console.log('lanzar pregunta');
+            if(self.startGame){
+              self.openQuestion();
+            }
           }
         });
 
@@ -154,10 +163,10 @@ export default {
           duration: 0,
           easing: 'easeInOutExpo',
           complete: function() {
-           console.log('lanzar pregunta');
-           if(self.startGame){
-            self.openQuestion()
-           }
+            console.log('lanzar pregunta');
+            if(self.startGame){
+              self.openQuestion();
+            }
           }
         });
 

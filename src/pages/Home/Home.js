@@ -11,7 +11,7 @@ export default {
   },
   name: 'home',
   components: {
-  Board
+    Board
   },
   methods: {
     changeView(alias){

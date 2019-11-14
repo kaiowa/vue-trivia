@@ -1,8 +1,8 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import App from './App.vue';
 import VModal from 'vue-js-modal';
 import router from './router';
- import store from './store/';
+import store from './store/';
 import axios from 'axios';
 import VueMeta from 'vue-meta';
 import Vuex from 'vuex';

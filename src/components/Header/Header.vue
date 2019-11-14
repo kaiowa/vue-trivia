@@ -1,8 +1,5 @@
 <template>
-<div class="header">
-  
-</div>
-
+  <div class="header" />
 </template>
 <script src="./Header.js"></script>
 <style lang="scss" scoped>

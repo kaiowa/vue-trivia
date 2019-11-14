@@ -77,32 +77,29 @@ const mutations = {
     state[data]++;
   },
   updateQuestionsOK(state,data){
- 
     let tempScores=state.scores.map((item)=>{
       if(item.id===data.catego){
-        item.score++
+        item.score++;
       }else{
         item.score=item.score;
       }
       return item;
-      
     });
     state.scores=tempScores;
-
     this.dispatch('player/increaseValues','TotalOk');
   },
   updateActiveOptions(state,data){
     state.tirando=true;
     state.activeOptions=data;
     state.cells.map((cell)=>{
-      cell.active=false
+      cell.active=false;
     });
     data.forEach((elemento) => {
-        let casilla=state.cells.find((cell)=>{
-          return cell.id==elemento;
-        })
-        if(casilla) casilla.active=true;
-     });
+      let casilla=state.cells.find((cell)=>{
+        return cell.id==elemento;
+      });
+      if(casilla) casilla.active=true;
+    });
   },
   updateTirando(state,data){
     state.tirando=data;
@@ -110,11 +107,10 @@ const mutations = {
   updatePosition(state,data){
     state.position=data;
     state.cells.map((cell)=>{
-      cell.active=false
+      cell.active=false;
     });
     state.tirando=false;
   }
-  
 };
 
 export default {

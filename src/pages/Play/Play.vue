@@ -1,8 +1,7 @@
 <template>
-<div class="play">
-  <Board :content="boardContent"></Board>
-</div>
-
+  <div class="play">
+    <Board :content="boardContent" />
+  </div>
 </template>
 <script src="./Play.js"></script>
 <style lang="scss" scoped>

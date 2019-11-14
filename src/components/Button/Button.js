@@ -6,8 +6,8 @@ export default {
     ButtonText:String
   },
   methods: {
-    clicked(){
-      
+    clicked(e){
+      this.$emit('clicked',e);
     }
     
   }

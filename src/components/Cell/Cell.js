@@ -24,13 +24,13 @@ export default {
       if(this.tipoCasilla.clase){
         PreClass = PreClass + ' '+this.tipoCasilla.clase;
       }
-       if(this.cell && this.cell.active){
-         PreClass = PreClass+ ' active';
-       }
+      if(this.cell && this.cell.active){
+        PreClass = PreClass+ ' active';
+      }
       return PreClass;
     },
     clickPosition(){
-      console.log('click en cell',this.cell)
+      console.log('click en cell',this.cell);
       this.$emit('position',this.cell);
     }
   }
