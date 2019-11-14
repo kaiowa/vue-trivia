@@ -1,0 +1,669 @@
+[{
+  "id":1,
+  "catego":1,
+  "question":"What do you call the monkey friend of Tarzan?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Cheetah"
+    },
+    {
+      "id":2,
+      "text":"Jane"
+    },
+    {
+      "id":3,
+      "text":"Mia"
+    }
+  ],
+  "right":1
+}
+,{
+  "id":2,
+  "catego":1,
+  "question":"What do you call the friends of The Lion King?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Timon and Pumba"
+    },
+    {
+      "id":2,
+      "text":"Pumba and Lion"
+    },
+    {
+      "id":3,
+      "text":"Cheetah y Pumba"
+    }
+  ],
+  "right":1
+},
+{
+  "id":3,
+  "catego":1,
+  "question":"What actor starred in the classic version of Planet of the Apes?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Charlon Heston"
+    },
+    {
+      "id":2,
+      "text":"Will Smith"
+    },
+    {
+      "id":3,
+      "text":"Nick Nolte"
+    }
+  ],
+  "right":1
+},
+{
+  "id":4,
+  "catego":1,
+  "question":"What was the last movie James Dean?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Giant"
+    },
+    {
+      "id":2,
+      "text":"Armagedon"
+    },
+    {
+      "id":3,
+      "text":"Wellcome to Wichita"
+    }
+  ],
+  "right":1
+},
+{
+  "id":5,
+  "catego":1,
+  "question":"Director of The Ninth Gate",
+  "answers":[
+    {
+      "id":1,
+      "text":"Roman polanski"
+    },
+    {
+      "id":2,
+      "text":"Stanley kubrick"
+    },
+    {
+      "id":3,
+      "text":"Anthony Hopkins"
+    }
+  ],
+  "right":1
+},
+{
+  "id":6,
+  "catego":1,
+  "question":"Name of the female character in Pulp Fiction.",
+  "answers":[
+    {
+      "id":1,
+      "text":"Mia Wallace"
+    },
+    {
+      "id":2,
+      "text":"Mia Vega"
+    },
+    {
+      "id":3,
+      "text":"Mia Thorpe"
+    }
+  ],
+  "right":1
+},
+{
+  "id":7,
+  "catego":1,
+  "question":"What actor is in the movie Batman Batman and Robin?",
+  "answers":[
+    {
+      "id":1,
+      "text":"George clooney"
+    },
+    {
+      "id":2,
+      "text":"Michael Keaton"
+    },
+    {
+      "id":3,
+      "text":"Will Smith"
+    }
+  ],
+  "right":1
+},
+{
+  "id":8,
+  "catego":1,
+  "question":"What was the Red October?",
+  "answers":[
+    {
+      "id":1,
+      "text":"SubMarine"
+    },
+    {
+      "id":2,
+      "text":"Trade Building"
+    },
+    {
+      "id":3,
+      "text":"Red Mustang"
+    }
+  ],
+  "right":1
+},
+{
+  "id":9,
+  "catego":2,
+  "question":"What Argentine football team call the Academy?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Racing avellaneda"
+    },
+    {
+      "id":2,
+      "text":"Velez Sarsfield"
+    },
+    {
+      "id":3,
+      "text":"River Plate"
+    }
+  ],
+  "right":1
+},
+{
+  "id":10,
+  "catego":2,
+  "question":"What team debuted Pedro de la Rosa in Formula 1?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Arrows"
+    },
+    {
+      "id":2,
+      "text":"Ferrari"
+    },
+    {
+      "id":3,
+      "text":"Toro Rosso"
+    }
+  ],
+  "right":1
+},
+{
+  "id":11,
+  "catego":2,
+  "question":"How many UEFA Cups won Real Madrid until 2000",
+  "answers":[
+    {
+      "id":1,
+      "text":"Two"
+    },
+    {
+      "id":2,
+      "text":"One"
+    },
+    {
+      "id":3,
+      "text":"Four"
+    }
+  ],
+  "right":1
+},
+{
+  "id":12,
+  "catego":2,
+  "question":"What nationality is Pablo Cesar Aimar?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Argentina"
+    },
+    {
+      "id":2,
+      "text":"Spain"
+    },
+    {
+      "id":3,
+      "text":"Colombia"
+    }
+  ],
+  "right":1
+}
+,
+{
+  "id":13,
+  "catego":2,
+  "question":"What football tournament earns a tower of Hercules?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Teresa Herrera"
+    },
+    {
+      "id":2,
+      "text":"Colombino"
+    },
+    {
+      "id":3,
+      "text":"Gamper"
+    }
+  ],
+  "right":1
+}
+,
+{
+  "id":14,
+  "catego":2,
+  "question":"What Grand Slam is played on natural grass?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Wimbledon"
+    },
+    {
+      "id":2,
+      "text":"Roland Garros"
+    },
+    {
+      "id":3,
+      "text":"London Park"
+    }
+  ],
+  "right":1
+},
+{
+  "id":15,
+  "catego":2,
+  "question":"Which team lost to the 'hand of God'?",
+  "answers":[
+    {
+      "id":1,
+      "text":"England"
+    },
+    {
+      "id":2,
+      "text":"France"
+    },
+    {
+      "id":3,
+      "text":"Italy"
+    }
+  ],
+  "right":1
+},
+{
+  "id":16,
+  "catego":3,
+  "question":"What dynasty belonged to Elizabeth I?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Tudor"
+    },
+    {
+      "id":2,
+      "text":"Borbon"
+    },
+    {
+      "id":3,
+      "text":"Sachhi"
+    }
+  ],
+  "right":1
+},{
+  "id":17,
+  "catego":3,
+  "question":"Who was known as the Iron Chancellor?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Bismark"
+    },
+    {
+      "id":2,
+      "text":"Octavius ​​Augustus"
+    },
+    {
+      "id":3,
+      "text":"Marco Polo"
+    }
+  ],
+  "right":1
+},{
+  "id":18,
+  "catego":3,
+  "question":"How Hannibal died?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Suicide"
+    },
+    {
+      "id":2,
+      "text":"Poison"
+    },
+    {
+      "id":3,
+      "text":"Murdered"
+    }
+  ],
+  "right":1
+},{
+  "id":19,
+  "catego":3,
+  "question":"What is the name the ancient city of stone in Jordan?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Petra"
+    },
+    {
+      "id":2,
+      "text":"Sumeria"
+    },
+    {
+      "id":3,
+      "text":"Venecia"
+    }
+  ],
+  "right":1
+},{
+  "id":20,
+  "catego":3,
+  "question":"What was the capital of the ancient Aztec empire?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Tenochtitlan"
+    },
+    {
+      "id":2,
+      "text":"Sumeria"
+    },
+    {
+      "id":3,
+      "text":"Venecia"
+    }
+  ],
+  "right":1
+},{
+  "id":21,
+  "catego":3,
+  "question":"What name was known to the political police created by Hitler in 1933?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Gestapo"
+    },
+    {
+      "id":2,
+      "text":"Legion"
+    },
+    {
+      "id":3,
+      "text":"Marines"
+    }
+  ],
+  "right":1
+},{
+  "id":22,
+  "catego":3,
+  "question":"How do you write 45 in binary?",
+  "answers":[
+    {
+      "id":1,
+      "text":"00101101"
+    },
+    {
+      "id":2,
+      "text":"00010011"
+    },
+    {
+      "id":3,
+      "text":"01001001"
+    }
+  ],
+  "right":1
+},{
+  "id":23,
+  "catego":3,
+  "question":"What do you call the direct memory access?",
+  "answers":[
+    {
+      "id":1,
+      "text":"DMA"
+    },
+    {
+      "id":2,
+      "text":"DDR"
+    },
+    {
+      "id":3,
+      "text":"MDMA"
+    }
+  ],
+  "right":1
+},{
+  "id":24,
+  "catego":4,
+  "question":"What is the European country most uses pirated software?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Greece"
+    },
+    {
+      "id":2,
+      "text":"Spain"
+    },
+    {
+      "id":3,
+      "text":"Italy"
+    }
+  ],
+  "right":1
+},{
+  "id":25,
+  "catego":4,
+  "question":"What was the file system of Windows 98?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Fat32"
+    },
+    {
+      "id":2,
+      "text":"NTFS"
+    },
+    {
+      "id":3,
+      "text":"EXT"
+    }
+  ],
+  "right":1
+},{
+  "id":26,
+  "catego":4,
+  "question":"Who was the main brain behind Napster?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Shawn fanning"
+    },
+    {
+      "id":2,
+      "text":"Mark Newman"
+    },
+    {
+      "id":3,
+      "text":"John McCloud"
+    }
+  ],
+  "right":1
+},{
+  "id":27,
+  "catego":4,
+  "question":"Year of birth of the email",
+  "answers":[
+    {
+      "id":1,
+      "text":"1971"
+    },
+    {
+      "id":2,
+      "text":"1981"
+    },
+    {
+      "id":3,
+      "text":"1974"
+    }
+  ],
+  "right":1
+},{
+  "id":28,
+  "catego":4,
+  "question":"Visual programming language developed by Borland.",
+  "answers":[
+    {
+      "id":1,
+      "text":"Delphi"
+    },
+    {
+      "id":2,
+      "text":"Visual Basic"
+    },
+    {
+      "id":3,
+      "text":"CSharp"
+    }
+  ],
+  "right":1
+},{
+  "id":29,
+  "catego":5,
+  "question":"What mythical group belonged Joe Strummer?",
+  "answers":[
+    {
+      "id":1,
+      "text":"The clash"
+    },
+    {
+      "id":2,
+      "text":"Sex Pistols"
+    },
+    {
+      "id":3,
+      "text":"Queen"
+    }
+  ],
+  "right":1
+},{
+  "id":30,
+  "catego":5,
+  "question":"What was the middle name of John Lennon?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Winston"
+    },
+    {
+      "id":2,
+      "text":"Martin"
+    },
+    {
+      "id":3,
+      "text":"Steven"
+    }
+  ],
+  "right":1
+},{
+  "id":31,
+  "catego":5,
+  "question":"What singer is the album 'The River' (1980)?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Bruce springsteen"
+    },
+    {
+      "id":2,
+      "text":"Joe Satriani"
+    },
+    {
+      "id":3,
+      "text":"The clash"
+    }
+  ],
+  "right":1
+},{
+  "id":32,
+  "catego":5,
+  "question":"What group is the album Master of Puppets?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Metallica"
+    },
+    {
+      "id":2,
+      "text":"Ac Dc"
+    },
+    {
+      "id":3,
+      "text":"Blind Guardian"
+    }
+  ],
+  "right":1
+},{
+  "id":33,
+  "catego":5,
+  "question":"What group is the Kings Of Metal album?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Manowar"
+    },
+    {
+      "id":2,
+      "text":"Sepultura"
+    },
+    {
+      "id":3,
+      "text":"Blind Guardian"
+    }
+  ],
+  "right":1
+},{
+  "id":34,
+  "catego":5,
+  "question":"What group were Ronnie James Dio and Ozzy Osbourne?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Black sabbath"
+    },
+    {
+      "id":2,
+      "text":"Stone Temple Pilots"
+    },
+    {
+      "id":3,
+      "text":"Megadeath"
+    }
+  ],
+  "right":1
+}
+]
+
+
+
+

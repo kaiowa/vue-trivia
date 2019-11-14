@@ -1,0 +1,76 @@
+@keyframes rotate {
+  
+  0% {
+    background: url('../../assets/dice/dado001.gif') 100% no-repeat;
+    background-position: 50%;
+  }
+  25% {
+    background: url('../../assets/dice/dado002.gif') 100% no-repeat;
+    background-position: 50%;
+  }
+  50% {
+    background: url('../../assets/dice/dado003.gif') 100% no-repeat;
+    background-position: 50%;
+  }
+  75% {
+    background: url('../../assets/dice/dado004.gif') 100% no-repeat;
+    background-position: 50%;
+  }
+  100% {
+    background: url('../../assets/dice/dado005.gif') 100% no-repeat;
+    background-position: 50%;
+  }
+}
+
+@keyframes activeDice {
+ 
+}
+.dice{
+  &.active{
+    animation: activeDice 0.5s infinite;
+  }
+  &.disabled{
+    opacity:0.4
+  }
+  .dado{
+    width: 100%;
+    height: 100%;
+    &.dice1{
+      background: url('../../assets/dice/dado_1.gif') 100% no-repeat;
+      background-position: 50%;
+    }
+    &.dice2{
+      background: url('../../assets/dice/dado_2.gif') 100% no-repeat;
+      background-position: 50%;
+    }
+    &.dice3{
+      background: url('../../assets/dice/dado_3.gif') 100% no-repeat;
+      background-position: 50%;
+    }
+    &.dice4{
+      background: url('../../assets/dice/dado_4.gif') 100% no-repeat;
+      background-position: 50%;
+    }
+    &.dice5{
+      background: url('../../assets/dice/dado_5.gif') 100% no-repeat;
+      background-position: 50%;
+    }
+    &.dice6{
+      background: url('../../assets/dice/dado_6.gif') 100% no-repeat;
+      background-position: 50%;
+    }
+  }
+  cursor:pointer;
+  width: 100%;
+  height: 100%;;
+  .image-dice{
+    background: url('../../assets/dice/dado_1.gif') 100% no-repeat;
+    background-position: 50%;
+    width:100%;
+    height: 100%;
+    
+  }
+  .rotating{
+    animation: rotate 0.5s infinite;
+  }
+}

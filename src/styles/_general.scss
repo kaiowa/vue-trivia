@@ -1,0 +1,17 @@
+body{
+  
+  background:url('../assets/background.jpg');
+  background-size: 100% 100%;
+}
+.v--modal-overlay{
+  background:rgba(0,0,0, 0.7);
+}
+.v--modal-box.v--modal{
+  background-color: transparent;
+  background: url('../assets/background-window.png') 100% no-repeat;
+  background-size: 100% 100%;
+  min-height: 500px;
+  top: 101px !important;
+  overflow: visible;
+
+}
