@@ -2,7 +2,7 @@ import Board from '@/components/Board';
 
 export default {
   metaInfo: {
-    title: 'Home',
+    title: 'VueTrivia',
     titleTemplate: '%s',
     htmlAttrs: {
       lang: 'en',

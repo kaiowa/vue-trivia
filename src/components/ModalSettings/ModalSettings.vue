@@ -1,10 +1,11 @@
 <template>
   <div class="settings">
-    <div class="form">
-      Audio  
-
-
+    <div class="option">
+      <span class="title">Audio</span>  <SwitchSlider></SwitchSlider>
     </div>
+    <div class="option">
+        <span class="title">Difficulty</span>
+    </div>    
   </div>
 </template>
 <script src="./ModalSettings.js"></script>
