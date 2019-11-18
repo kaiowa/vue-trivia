@@ -30,8 +30,7 @@ export default {
       return PreClass;
     },
     clickPosition(){
-      console.log('click en cell',this.cell);
-      this.$emit('position',this.cell);
+      if(this.cell.active) this.$emit('position',this.cell);
     }
   }
  

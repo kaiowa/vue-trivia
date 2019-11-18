@@ -1,8 +1,12 @@
 
 .finish{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+    width: 100%;
     height: 100%;
-    flex-direction: row;
+    vertical-align: middle;
+    div{
+        flex: 1 1 auto;
+        width: 100%;
+    }
 }

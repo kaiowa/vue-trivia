@@ -176,8 +176,6 @@ export default {
       this.$store.dispatch('player/updatePosition',this.currentPosition);
       let playerTop=this.$refs.player.offsetTop;
       let playerLeft=this.$refs.player.offsetLeft;
-      debugger;
-
       if(this.position.top!=playerTop){
         
         let mKeyframes=this.generateKeyFrames(playerTop,playerLeft,this.position.top,this.position.left);
