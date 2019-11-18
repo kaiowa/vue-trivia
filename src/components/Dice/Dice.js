@@ -35,7 +35,7 @@ export default {
       let Min = 0;
       let Max = 5;
       let  posi = Math.ceil(Min + (Math.random() * ((Max - Min) + 1)));
-      this.diceResult=posi;
+      this.diceResult=6;
       this.$emit('tirada',this.diceResult);
       console.log('this.diceResult',this.diceResult);
      

@@ -661,6 +661,26 @@
     }
   ],
   "right":1
+},
+{
+  "id":35,
+  "catego":1,
+  "question":"What do you call the friends of The Lion King?",
+  "answers":[
+    {
+      "id":1,
+      "text":"Timon and Pumba"
+    },
+    {
+      "id":2,
+      "text":"Pumba and Lion"
+    },
+    {
+      "id":3,
+      "text":"Cheetah y Pumba"
+    }
+  ],
+  "right":1
 }
 ]
 

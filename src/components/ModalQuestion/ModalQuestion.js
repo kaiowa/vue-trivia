@@ -40,7 +40,8 @@ export default {
     this.correct=false;
     this.$store.dispatch('player/getGuestionByIdType',this.questionType.id).then((question)=>{
       this.question=question;
-      
+      this.question.answers.map((item)=>item.class='');
+      console.log('question',this.question);
       let textResponses='';
       this.answers = this.question.answers.map((a) => [Math.random(),a]).sort((a,b) => a[0]-b[0]).map((a) => a[1]);
       

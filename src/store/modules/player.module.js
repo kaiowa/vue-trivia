@@ -14,7 +14,8 @@ const state = {
   position:1,
   activeOptions:[],
   TotalShows:0,
-  TotalOk:0
+  TotalOk:0,
+  finishedGame:false
   
 };
 const actions = {
@@ -72,6 +73,8 @@ const mutations = {
     state.TotalShows=0;
     state.TotalOk=0;
     state.tirando=false;
+    state.scores.map((item)=>item.score=0);
+    state.finishedGame=false;
   },
   increaseValues(state,data){
     state[data]++;
@@ -86,6 +89,8 @@ const mutations = {
       return item;
     });
     state.scores=tempScores;
+    state.finishedGame=(state.scores.filter((e)=>e.score===1).length===1) ? true : false
+    console.log('finished Game',state.finishedGame);
     this.dispatch('player/increaseValues','TotalOk');
   },
   updateActiveOptions(state,data){

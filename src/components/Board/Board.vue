@@ -20,12 +20,12 @@
             <p class="total">
               Aciertos:{{ TotalOk }}
             </p>
-						<SwitchSlider></SwitchSlider>
+						<!-- <SwitchSlider></SwitchSlider>
 						<br><br>
-						<br>
+						<br> -->
 						
             <!-- <Button ButtonText="Jugar"></Button> -->
-            <Button button-text="Settings" @clicked="openSettings" />
+            <!-- <Button button-text="Settings" @clicked="openSettings" /> -->
           </div>
           <div class="community-chest-deck">
             <div class="deck">
@@ -100,9 +100,21 @@
             class-name="community-chest"
             @position="updatePosition"
           />
+          
+           <Cell
+            :cell-number="12"
+            :cell="casillas[11]"
+            class-name="community-chest"
+            @position="updatePosition"
+          />
         </div>
 
         <div class="row horizontal-row bottom-row">
+          <Cell
+            :cell-number="20"
+            :cell="casillas[19]"
+            @position="updatePosition"
+          />
           <Cell
             :cell-number="19"
             :cell="casillas[18]"
@@ -138,14 +150,21 @@
             :cell="casillas[12]"
             @position="updatePosition"
           />
-          <Cell
-            :cell-number="12"
-            :cell="casillas[11]"
-            @position="updatePosition"
-          />
         </div>
 
         <div class="row vertical-row left-row">
+          <Cell
+            :cell-number="24"
+            :cell="casillas[23]"
+            class-name="community-chest"
+            @position="updatePosition"
+          />
+          <Cell
+            :cell-number="23"
+            :cell="casillas[22]"
+            class-name="community-chest"
+            @position="updatePosition"
+          />
           <Cell
             :cell-number="22"
             :cell="casillas[21]"
@@ -155,12 +174,6 @@
           <Cell
             :cell-number="21"
             :cell="casillas[20]"
-            class-name="community-chest"
-            @position="updatePosition"
-          />
-          <Cell
-            :cell-number="20"
-            :cell="casillas[19]"
             class-name="community-chest"
             @position="updatePosition"
           />

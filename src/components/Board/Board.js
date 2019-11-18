@@ -3,6 +3,7 @@ import Dice from '@/components/Dice';
 import ScoreBoard from  '@/components/ScoreBoard';
 import ModalQuestion from '@/components/ModalQuestion';
 import ModalSettings from '@/components/ModalSettings';
+import ModalFinishGame from '@/components/ModalFinishGame';
 import TimerBar from '@/components/TimerBar';
 import Button from '@/components/Button';
 import SwitchSlider from '@/components/ui/Switch';
@@ -18,6 +19,7 @@ export default {
     ScoreBoard,
     ModalQuestion,
     ModalSettings,
+    ModalFinishGame,
     TimerBar,
     Button,
     SwitchSlider
@@ -40,11 +42,20 @@ export default {
       casillas:state => state.player.cells,
       TotalShows:state=>state.player.TotalShows,
       TotalOk:state => state.player.TotalOk,
-      scores:state => state.player.scores
+      scores:state => state.player.scores,
+      finished:state =>state.player.finishedGame
     }),
     
   },
   watch:{
+    finished:function(value){
+      if(value===true){
+        setTimeout(()=>{
+          this.$modal.show(ModalFinishGame);
+        },3000);
+      }
+    },
+
     scores:function(value){
       console.log('cambio en scoresssss');
       this.cScores=value;
@@ -58,24 +69,52 @@ export default {
   mounted() {
     this.$store.dispatch('player/startResetGame');
     this.cScores=this.scores;
-    this.Posicionar();
+    this.initialPosition();
+    // this.Posicionar();
     console.log('mounted header');
   },
   methods: {
-   
+    initialPosition(){
+      var self=this;
+      let Min = 0;
+  		let Max = 21;
+      let  posi = Math.ceil(Min + (Math.random() * ((Max - Min) + 1)));
+      // let posi=2;
+      this.currentPosition=posi;
+      this.position=getPosition(this.currentPosition);
+      anime({
+        targets: this.$refs.player,
+        left: this.position.left,
+        top:this.position.top,
+        duration: 0,
+        easing: 'easeInOutExpo',
+        complete: function() {
+          console.log('lanzar pregunta');
+          if(self.startGame){
+            self.openQuestion();
+          }
+        }
+      });
+      this.$store.dispatch('player/updatePosition',this.currentPosition);
+
+    },
     updateActiveCells(data){
       
     },
     FinishDice(result){
       this.resultadoTirada=result;
       let activeOptions=[];
-    
-      let anterior=this.currentPosition-this.resultadoTirada;
-      if(anterior<1){
-        let difeCero=this.resultadoTirada-this.currentPosition;
-        anterior=22-difeCero;
+      let anterior,posterior;
+ 
+      if(this.currentPosition>18){
+        anterior=(this.currentPosition+this.resultadoTirada)>24 ? Math.abs(24-(this.currentPosition+this.resultadoTirada)) : this.currentPosition+this.resultadoTirada;
+        posterior=this.currentPosition-this.resultadoTirada;
+      }else{
+        anterior=(this.currentPosition-this.resultadoTirada)<1 ? 24-(Math.abs(this.currentPosition-this.resultadoTirada)): this.currentPosition-this.resultadoTirada ;
+        posterior=this.currentPosition+this.resultadoTirada;
       }
-      let posterior=this.currentPosition+this.resultadoTirada;
+      console.log('anterior:'+anterior);
+      console.log('posterior:'+posterior);
       activeOptions.push(anterior);
       activeOptions.push(posterior);
       this.$store.dispatch('player/updateActiveOptions',activeOptions).then((data)=>{
@@ -113,7 +152,7 @@ export default {
           ];
         }
       }else{
-        if(playerTop>=510 && positionLeft>=playerLeft){
+        if(playerTop>=420 && positionLeft>=playerLeft){
           mKeyframes=[
             {left:positionLeft},
             {top:positionTop},
@@ -137,6 +176,8 @@ export default {
       this.$store.dispatch('player/updatePosition',this.currentPosition);
       let playerTop=this.$refs.player.offsetTop;
       let playerLeft=this.$refs.player.offsetLeft;
+      debugger;
+
       if(this.position.top!=playerTop){
         
         let mKeyframes=this.generateKeyFrames(playerTop,playerLeft,this.position.top,this.position.left);

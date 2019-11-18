@@ -13,11 +13,12 @@
 
   0% {
    
-    background:url(../../assets/background-cell-on.png) 100% no-repeat;
+    // background:url(../../assets/background-cell-on.png) 100% no-repeat;
+    border: 3px solid #fff;
     background-size: 100% 100%;
   }
   100% {
-    background:url(../../assets/background-cell.png) 100% no-repeat;
+    // background:url(../../assets/background-cell.png) 100% no-repeat;
     background-size: 100% 100%;
   }
 }
@@ -38,7 +39,7 @@
   }
   &.cine{
     background-color:#f50c2b;
-    background:url(../../assets/background-cell.png) 100% no-repeat;
+    // background:url(../../assets/background-cell.png) 100% no-repeat;
     background-size: 100% 100%;
     .name{
       background:url(../../assets/icon_cine.png) 100% no-repeat;
@@ -49,7 +50,7 @@
   }
   &.deportes{
     background-color: #10a506;
-    background:url(../../assets/background-cell.png) 100% no-repeat;
+    // background:url(../../assets/background-cell.png) 100% no-repeat;
     background-size: 100% 100%;
     .name{
       background:url(../../assets/icon_sports.png) 50% no-repeat;
@@ -58,12 +59,12 @@
   }
   &.literatura{
     background-color: #369be9;
-    background:url(../../assets/background-cell.png) 100% no-repeat;
+    // background:url(../../assets/background-cell.png) 100% no-repeat;
     background-size: 100% 100%;
   }
   &.informatica{
     background-color:#05c5c5;
-    background:url(../../assets/background-cell.png) 100% no-repeat;
+    // background:url(../../assets/background-cell.png) 100% no-repeat;
     background-size: 100% 100%;
     .name{
       background:url(../../assets/icon_tech.png) 50% no-repeat;
@@ -71,8 +72,8 @@
     }
   }
   &.historia{
-    background-color: #ffed20;
-    background:url(../../assets/background-cell.png) 100% no-repeat;
+    background-color: #f46616;
+    // background:url(../../assets/background-cell.png) 100% no-repeat;
     background-size: 100% 100%;
     .name{
       background:url(../../assets/icon_history.png) 50% no-repeat;
@@ -81,7 +82,7 @@
   }
   &.musica{
     background-color: #890396;
-    background:url(../../assets/background-cell.png) 100% no-repeat;
+    // background:url(../../assets/background-cell.png) 100% no-repeat;
     background-size: 100% 100%;
     .name{
       background:url(../../assets/icon_music.png) 50% no-repeat;
