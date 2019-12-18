@@ -70,8 +70,6 @@ export default {
     this.$store.dispatch('player/startResetGame');
     this.cScores=this.scores;
     this.initialPosition();
-    // this.Posicionar();
-    console.log('mounted header');
   },
   methods: {
     initialPosition(){

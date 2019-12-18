@@ -35,10 +35,8 @@ export default {
       let Min = 0;
       let Max = 5;
       let  posi = Math.ceil(Min + (Math.random() * ((Max - Min) + 1)));
-      this.diceResult=6;
+      this.diceResult=posi;
       this.$emit('tirada',this.diceResult);
-      console.log('this.diceResult',this.diceResult);
-     
     },
     launchDice(){
       if(!this.tirando){
@@ -46,7 +44,6 @@ export default {
         setTimeout(()=>{
           this.rotating=false;
           this.generateDice();
-
         },2000);
       }
 
